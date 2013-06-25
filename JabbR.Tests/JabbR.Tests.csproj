@@ -38,6 +38,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AWS.Extensions">
+      <HintPath>..\packages\AWS.Extensions.1.5.24.0\lib\AWS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK">
+      <HintPath>..\packages\AWSSDK.1.5.24.0\lib\AWSSDK.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.0.0-beta2-130602-b51\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
@@ -96,6 +102,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="aws-sessionprovider-sample.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

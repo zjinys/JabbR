@@ -57,6 +57,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\AntiXSS.4.2.1\lib\net40\AntiXssLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="AWS.Extensions">
+      <HintPath>..\packages\AWS.Extensions.1.5.24.0\lib\AWS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK">
+      <HintPath>..\packages\AWSSDK.1.5.24.0\lib\AWSSDK.dll</HintPath>
+    </Reference>
     <Reference Include="EcmaScript.NET, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EcmaScript.Net.1.0.1.0\lib\net20\EcmaScript.NET.dll</HintPath>
@@ -922,6 +928,7 @@
     <EmbeddedResource Include="Migrations\201304280435045_MoreClientProperties.resx">
       <DependentUpon>201304280435045_MoreClientProperties.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="aws-sessionprovider-sample.config" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\ba-linkify.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -1124,6 +1131,7 @@
     <Compile Include="Services\UploadCallbackHandler.cs" />
     <Compile Include="UploadHandlers\UploadProcessor.cs" />
     <Compile Include="UploadHandlers\UploadResult.cs" />
+    <Compile Include="UploadHandlers\S3BlobStorageHandler.cs" />
     <Compile Include="ViewModels\LobbyRoomViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\NotificationsViewModel.cs" />
